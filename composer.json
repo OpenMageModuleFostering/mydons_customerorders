@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Mydons_Customerorders",
+    "type": "magento-module",
+    "license": "OSL-v3.0",
+    "homepage": "",
+    "description": "A custom report extension which shows the list of customers not placed any order for the past three months",
+    "authors": [
+    {
+        "name": "Ramesh Pushparaj",
+        "email": "ramesh.vlb08@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

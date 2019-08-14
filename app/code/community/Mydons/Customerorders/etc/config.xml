@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mydons_Customerorders>
+            <version>0.1.0</version>
+        </Mydons_Customerorders>
+    </modules>
+    <admin>
+        <routers>
+            <customerorders>
+                <use>admin</use>
+                <args>
+                    <module>Mydons_Customerorders</module>
+                    <frontName>customerorders</frontName>
+                </args>
+            </customerorders>
+        </routers>
+    </admin>
+    <adminhtml>
+        <menu>
+            <report>
+                <children>
+                    <customerorders module="customerorders">
+                        <title>Inactive Customers</title> 
+                        <action>customerorders/adminhtml_customerorders</action>
+                    </customerorders>
+                </children>
+            </report>
+        </menu>
+        <acl>
+            <resources>
+                <all>
+                    <title>Allow Everything</title>
+                </all>
+                <admin>
+                    <children>
+                        <report>
+                            <children>
+                                <customerorders translate="title" module="customerorders">
+                                    <title>Inactive Customers</title>
+                                    <action>customerorders/adminhtml_customerorders</action>
+                                </customerorders>
+                            </children>
+                        </report>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+        <layout>
+            <updates>
+                <customerorders>
+                    <file>customerorders.xml</file>
+                </customerorders>
+            </updates>
+        </layout>
+    </adminhtml>   
+    <global>
+        <blocks>
+            <customerorders>
+                <class>Mydons_Customerorders_Block</class>
+            </customerorders>
+        </blocks>
+        <helpers>
+            <customerorders>
+                <class>Mydons_Customerorders_Helper</class>
+            </customerorders>
+        </helpers>
+    </global>
+</config>

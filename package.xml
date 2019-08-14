@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package>
+    <name>Mydons_Customerorders</name>
+    <version>0.1.0</version>
+    <stability>stable</stability>
+    <license>OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>A custom report extension which shows the list of customers not placed any order for the past three months</summary>
+    <description>A custom report extension which shows the list of customers not placed any order for the past three months&#xD;
+&#xD;
+Useful for finding out the Inactive Customers in the website</description>
+    <notes>Initial Version shows the inactive customers for fixed time period (3 months). </notes>
+    <authors><author><name>Ramesh Pushparaj</name><user>mydonsdev</user><email>ramesh.vlb08@gmail.com</email></author></authors>
+    <date>2015-04-02</date>
+    <time>11:18:27</time>
+    <contents><target name="magecommunity"><dir name="Mydons"><dir name="Customerorders"><dir name="Block"><dir name="Adminhtml"><dir name="Customerorders"><file name="Grid.php" hash="f609e2e531664a3fb3d5ff0bd8dedd05"/></dir><file name="Customerorders.php" hash="a969767537778382ef08c8fb133304e0"/></dir><file name="Customerorders.php" hash="c33a3a0a14dc4ec34fe057f7e63066cf"/></dir><dir name="Helper"><file name="Data.php" hash="6e5d3f39cd3e8b6dd8b2a18713a3086a"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="CustomerordersController.php" hash="f374d5340b0abbd0fcaf8cf33589c51f"/></dir></dir><dir name="etc"><file name="config.xml" hash="e08e7c8b2a6df0c61317fe1fff445035"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Mydons_Customerorders.xml" hash="67a990ab86259af9adae1e4a28ef29d7"/></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="customerorders.xml" hash="c3c7c9699726b2d2357a2134a754b449"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.3.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
